@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+ {
+     int a;
+     double b;
+     char c;
+     cin>>a>>b>>c;
+     try
+     {
+         if(a>10)
+         {
+             throw a;
+         }
+         else if(c>'D')
+         {
+             throw c;
+         }
+         else if(b>1000)
+         {
+             throw b;
+         }
+
+     }
+     catch(int a)
+     {
+         cout<<"value exceeding the limit of int"<<endl;
+     }
+     catch(double b)
+     {
+         cout<<"value exceeding the limit of double"<<endl;
+     }
+     catch(char c)
+     {
+         cout<<"value exceeding the limit of char"<<endl;
+     }
+
+ }
